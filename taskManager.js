@@ -1,13 +1,15 @@
-let taskNames=["Review Pull Requests", "Write Documentation","Fix Database Bug","Client Meeting Prep", "Deploy New Feature",];
-let taskDurations=[1.5, 4, 0.75, 2, 3.5];
+let input = require('prompt-sync')();
 
-let i =0;
+let taskNames = [];
+let taskDurations = [];
 
-while (i < tasks.length) {
-    taskNames.push(tasks[i].name);
-    taskDurations.push(tasks[i].duration + "hours");
+let numberOfTasks = parseInt(input("How many tasks? "));
 
-    i= i + 1;
+let i = 0;
+while (i < numberOfTasks) {
+    taskNames.push(input("Enter task name: "));
+    taskDurations.push(input("Enter task duration in hours: "));
+    i= i +1;
 }
 
 console.table(taskNames);
