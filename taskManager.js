@@ -1,13 +1,5 @@
-let taskNames=[];
-let taskDurations=[];
-
-let tasks = [
-  { name: "Review Pull Requests", duration: 1.5 },
-  { name: "Write Documentation", duration: 4 },
-  { name: "Fix Database Bug", duration: 0.75 },
-  { name: "Client Meeting Prep", duration: 2 },
-  { name: "Deploy New Feature", duration: 3.5 }
-];
+let taskNames=["Review Pull Requests", "Write Documentation","Fix Database Bug","Client Meeting Prep", "Deploy New Feature",];
+let taskDurations=[1.5, 4, 0.75, 2, 3.5];
 
 let i =0;
 
